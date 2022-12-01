@@ -18,6 +18,12 @@ export class AppComponent {
     this.guardarFunciones.push(dato);
   }
 
+  deleteUpperCase(){
+    this.funcion = this.funcion.toLowerCase();
+    this.variable = this.variable.toLowerCase();
+
+  }
+
   newtonRaphson() {
     if (this.iteraciones <= 0 || this.funcion.length == 0 || this.variable.length <= 0 || this.variable.length >= 2) {
       (this.iteraciones <= 0) ?
@@ -26,6 +32,8 @@ export class AppComponent {
             alert('no hay variable') : (this.variable.length >= 2) ?
               alert('más de un caracter en la variable') : '';
     } else {
+      this.deleteUpperCase();
+      console.log(this.variable,this.funcion);
       let resultador = 1;
       let f = math.parse(this.funcion);
       let variable = math.parse(this.variable);
