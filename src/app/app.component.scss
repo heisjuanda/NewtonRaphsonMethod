@@ -1,0 +1,445 @@
+input:invalid{
+  animation: 0.4s badValues linear forwards;
+}
+@keyframes badValues {
+  0%{
+    margin-left: 0;
+  }25%{
+    margin-left: 3vw;
+  }50%{
+    margin-left: 0;
+  }75%{
+    margin-right: 3vw;
+  }100%{
+    margin-right: 0vw;
+  }
+}
+
+.principal {
+  header {
+    div {
+      h3 {
+        font-size: 5vw;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: wheat;
+        transition: 0.5s;
+        text-shadow: 0.2vw 0.2vw 0vw rgba(255, 255, 255, 0.596);
+        //animation: letter-spacingg 1s infinite linear forwards ;
+      }
+      h3:hover{
+        letter-spacing: 1vw ;
+      }
+    }
+    @keyframes letter-spacingg{
+      0%{
+        letter-spacing: 0vw ;
+      }50%{
+        letter-spacing: 1vw ;
+      }100%{
+        letter-spacing: 0vw ;
+      }
+    }
+  }
+
+  article {
+    .funcion {
+      grid-area: 'funcion';
+      font-family: 'Roboto', sans-serif;
+      input {
+        width: 30vw;
+        height: 2vw;
+        transition: 0.2s;
+        font-size: 1.5vw;
+        font-family: 'Roboto', sans-serif;
+        border: 0.3vw solid rgb(200, 108, 236);
+        box-shadow: 0.5vw 0.5vw 0vw rgb(212, 139, 241);
+        background-color: transparent;
+        color: rgb(255, 127, 148);
+        border-radius: 2vw;
+      }
+      input:hover{
+        box-shadow: 0vw 0vw 0vw rgb(212, 139, 241);
+        margin: 0.5vw;
+      }
+      label {
+        font-size: 2vw;
+        color: pink;
+        //-webkit-text-stroke: 0.05vw black;
+      }
+    }
+
+    .iteraciones {
+      grid-area: 'iteracion';
+      font-family: 'Roboto', sans-serif;
+      input {
+        text-align: center;
+        transition: 0.2s;
+        width: 6vw;
+        height: 2vw;
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        border: 0.3vw solid rgb(200, 108, 236);
+        box-shadow: 0.5vw 0.5vw 0vw rgb(212, 139, 241);
+        background-color: transparent;
+        color: rgb(255, 127, 148);
+        border-radius: 1.5vw;
+      }
+      input:hover{
+        box-shadow: 0vw 0vw 0vw rgb(212, 139, 241);
+        margin: 0.5vw;
+      }
+      label {
+        font-size: 2vw;
+        color: pink;
+        //-webkit-text-stroke: 0.05vw black;
+      }
+    }
+
+    .variable {
+      grid-area: 'variable';
+      font-family: 'Roboto', sans-serif;
+      input {
+        text-align: center;
+        width: 2vw;
+        height: 2vw;
+        transition: 0.2s;
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        border: 0.3vw solid rgb(200, 108, 236);
+        box-shadow: 0.5vw 0.5vw 0vw rgb(212, 139, 241);
+        background-color: transparent;
+        color: rgb(255, 127, 148);
+        border-radius: 25%;
+      }
+      input:hover{
+        box-shadow: 0vw 0vw 0vw rgb(212, 139, 241);
+        margin: 0.5vw;
+      }
+
+      label {
+        font-size: 2vw;
+        color: pink;
+        //-webkit-text-stroke: 0.05vw black;
+      }
+
+    }
+
+    .tabla1 {
+      display: grid;
+      grid-template-areas:
+        'funcion variable iteracion'
+      ;
+      margin: 1vw;
+      text-align: center;
+    }
+    /*.eliminar{
+      grid-area: 'eliminar';
+    }
+    .calcular{
+      grid-area: 'calcular';
+    }
+    .tablaB{
+      grid-template-areas:
+      'calcular eliminar';
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+    }*/
+    .calcular/*.eliminar*/ {
+      text-align: center;
+      margin: 2vw;
+      button {
+        border: 0.5vw solid rgb(200, 108, 236);
+        background-color: transparent;
+        box-shadow: 1vw 1vw 0vw rgb(212, 139, 241);
+        transition: 0.1s;
+        border-radius: 25%;
+        p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.5vw;
+          color: rgb(255, 127, 148);
+        }
+      }
+      button:active{
+        box-shadow: 0vw 0vw 0vw rgb(212, 139, 241);
+        margin: 0.5vw;
+      }
+    }
+
+    .iterador {
+      background-color: rgb(243, 162, 193);
+      p{
+        color: white;
+        font-size: 2vw;
+      }
+    }
+
+    .numero {
+      background-color: rgb(248, 141, 141);
+      p{
+        color: black;
+        font-size: 2vw;
+      }
+    }
+
+    .tabla2 {
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 50% 50%;
+      margin: 1vw;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      div{
+        box-shadow: 0.5vw 0.5vw 0.1vw rgba(255, 255, 255, 0.459);
+      }
+    }
+    .iteradores{
+      font-family: 'Roboto', sans-serif;
+      grid-area: iteradores;
+      color: white;
+      text-shadow: 0.2vw 0.2vw 0vw rgba(255, 255, 255, 0.596);
+      font-size: 3vw;
+      transition: 0.4s;
+    }
+    .iteradores:hover{
+      background-color: rgba(245, 222, 179, 0.418);
+    }
+    .valores{
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      grid-area: valores;
+      text-shadow: 0.2vw 0.2vw 0vw rgba(255, 255, 255, 0.596);
+      font-size: 3vw;
+      transition: 0.4s;
+    }
+    .valores:hover{
+      background-color: rgba(245, 222, 179, 0.418);
+    }
+    .tablaT{
+      display: grid;
+      grid-template-areas:
+      'iteradores valores';
+    }
+  }
+}
+.secundaria{
+  header{
+    margin-top: 5vw;
+    h3{
+      transition: 0.5s;
+      color: wheat;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 5vw;
+      text-shadow: 0.2vw 0.2vw 0vw rgba(255, 255, 255, 0.596);
+    }
+    h3:hover{
+      letter-spacing: 1vw;
+    }
+  }
+}
+article{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  .tabla3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10%;
+
+    div{
+      p{
+        font-size: 1.5vw;
+
+        color: white;
+        text-shadow: 0.1vw 0.1vw 0vw black;
+      }
+    }
+  }
+}
+.final{
+  font-family: 'Roboto', sans-serif;
+  .git{
+    grid-area: git;
+    p{
+      color: wheat;
+      transition: 0.5s;
+      text-shadow: 0.3vw 0.3vw 0vw rgba(255, 255, 255, 0.705);
+      font-size: 5vw;
+    }
+    p:hover{
+      letter-spacing: 1vw;
+    }
+  }
+  .link{
+    grid-area: link;
+    p{
+      text-shadow: 0.15vw 0.15vw 0vw rgba(255, 255, 255, 0.705);
+      font-size: 2vw;
+      transition: 0.5s;
+      a{
+        color: wheat;
+        text-decoration: none;
+      }
+    }
+    p:hover{
+      letter-spacing: 1vw;
+    }
+  }
+  .tablaF{
+    grid-template-areas:
+    'git'
+    'link';
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 699px) {
+
+  input:invalid{
+    animation: 0.4s badValues linear forwards;
+  }
+  @keyframes badValues {
+    0%{
+      margin-left: 0;
+    }25%{
+      margin-left: 5vw;
+    }50%{
+      margin-left: 0;
+    }75%{
+      margin-right: 5vw;
+    }100%{
+      margin-right: 0vw;
+    }
+  }
+
+  .principal {
+    header {
+      div {
+        h3 {
+          font-size: 9vw;
+          text-align: center;
+        }
+
+      }
+    }
+
+    article {
+      .funcion {
+        input {
+          width: 40vw;
+          height: 4vw;
+          font-size: 3vw;
+        }
+        label {
+          font-size: 4vw;
+        }
+      }
+
+      .iteraciones {
+        input {
+          text-align: center;
+          width: 8vw;
+          height: 4vw;
+          font-size: 4vw;
+        }
+        label {
+          font-size: 4vw;
+        }
+      }
+
+      .variable {
+        input {
+          text-align: center;
+          width: 5vw;
+          height: 4vw;
+          font-size: 4vw;
+        }
+        label {
+          font-size: 4vw;
+        }
+      }
+      .tabla1 {
+        display: grid;
+        grid-template-areas:
+          'funcion'
+          'variable'
+          'iteracion'
+        ;
+        margin: 1vw;
+        gap: 5vw;
+        text-align: center;
+      }
+      .calcular/*.eliminar*/ {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        text-align: center;
+        button {
+          p {
+            font-size: 3vw;
+          }
+        }
+      }
+      .iterador {
+        p{
+          font-size: 5vw;
+        }
+      }
+      .numero {
+        p{
+          font-size: 5vw;
+        }
+      }
+      .tabla2 {
+        grid-template-columns: 50% 50%;
+        margin: 1vw;
+        text-align: center;
+      }
+      .iteradores{
+        font-size: 6vw;
+      }
+      .valores{
+        font-size: 6vw;
+      }
+    }
+  }
+  .secundaria{
+    header{
+      h3{
+        font-size: 9vw;
+      }
+    }
+  }
+  article{
+    text-align: center;
+    .tabla3{
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 10% 10% 10% 10%;
+      div{
+        p{
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+  .final{
+    .git{
+      p{
+        font-size: 8vw;
+      }
+    }
+    .link{
+      p{
+        font-size: 5vw;
+      }
+    }
+    .tablaF{
+      grid-template-areas:
+      'git'
+      'link';
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
