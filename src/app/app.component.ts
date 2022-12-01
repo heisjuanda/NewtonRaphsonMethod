@@ -18,7 +18,7 @@ export class AppComponent {
     this.guardarFunciones.push(dato);
   }
 
-  deleteUpperCase(){
+  deleteUpperCase() {
     this.funcion = this.funcion.toLowerCase();
     this.variable = this.variable.toLowerCase();
 
@@ -33,7 +33,6 @@ export class AppComponent {
               alert('más de un caracter en la variable') : '';
     } else {
       this.deleteUpperCase();
-      console.log(this.variable,this.funcion);
       let resultador = 1;
       let f = math.parse(this.funcion);
       let variable = math.parse(this.variable);
@@ -48,14 +47,11 @@ export class AppComponent {
         resultador = resultador - (funcion.evaluate(scope) / derivada.evaluate(scope));
         scope.x = resultador;
       }
-      //console.log(resultador);
     }
   }
 
   deleteFunction() {
-    for (let i = 0; i < this.guardarFunciones.length; i++) {
-      this.guardarFunciones.splice(0,this.guardarFunciones.length);
-    }
+    this.guardarFunciones.splice(0, this.guardarFunciones.length);
   }
 
 }
