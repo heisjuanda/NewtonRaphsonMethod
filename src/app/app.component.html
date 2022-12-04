@@ -27,7 +27,7 @@
         <div class="funcion">
           <label for="function"><i>Dígite la función</i></label>
           <br>
-          <input type="text" id="function" [(ngModel)]="funcion" required="true" placeholder="sen(x)" minlength="1">
+          <input type="text" id="function" [(ngModel)]="funcion" required="true" placeholder="sin(x)" minlength="1">
         </div>
         <div class="variable">
           <label for="letra"><i>Dígite la variable a derivar</i></label>
@@ -64,7 +64,7 @@
           </h1>
         </div>
       </table>
-      <table *ngFor="let item of guardarFunciones,index as i" class="tabla2">
+      <table *ngFor="let item of guardarResultados,index as i" class="tabla2">
         <div class="iterador">
           <p>
             {{i+1}}
