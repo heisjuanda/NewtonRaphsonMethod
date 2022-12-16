@@ -60,6 +60,17 @@ export class AppComponent {
         this.addFunction(resultadorTemporal);
         resultador = resultador - (funcion.evaluate(scope) / derivada.evaluate(scope));
         scope.x = resultador;
+
+        //Errores aqui
+        if(isNaN(scope.x)){
+          this.addFunction(NaN);
+          break;
+        }else
+        if(scope.x == Number.POSITIVE_INFINITY || scope.x == Number.NEGATIVE_INFINITY){
+          this.addFunction(Infinity);
+          break;
+        }
+
       }
     }
   }
